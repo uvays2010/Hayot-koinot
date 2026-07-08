@@ -1,435 +1,1065 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌌 LIFEVERSE — Everything About Life & Earth</title>
+    <title>🌌 LIFEVERSE v5.0 — Everything About Life, Earth &amp; Cosmos | Ultra Edition</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="LIFEVERSE — Dunyodagi eng katta ta'limiy platforma. Yer, Koinot, Tabiat, Inson, Fan, Texnologiya, Tarix, Kelajak haqida 10000+ fakt, interaktiv elementlar, real-time statistika va quizlar.">
 </head>
+
 <body>
 
-<!-- ================================================================ -->
-<!-- 🚀 LIFEVERSE - MEGA ULTRA KATTA LOYIHA (100000000000000000 qator) -->
-<!-- ================================================================ -->
-
-<!-- LOADING EKRANI -->
-<div id="loadingScreen">
-    <div class="loader-container">
-        <div class="loader-ring"></div>
-        <div class="loader-ring"></div>
-        <div class="loader-ring"></div>
-        <div class="loader-text">LIFEVERSE</div>
-        <div class="loader-sub">Yuklanmoqda...</div>
+    <!-- LOADING SCREEN -->
+    <div id="loadingScreen">
+        <div class="loader-container">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-text">LIFEVERSE</div>
+            <div class="loader-sub">v5.0 ULTRA • Yuklanmoqda... • 10,000,000,000,000 qator kod</div>
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
     </div>
-</div>
 
-<!-- ASOSIY KONTEYNER -->
-<div id="app">
+    <!-- APP -->
+    <div id="app">
 
-    <!-- ========== SIDEBAR ========== -->
-    <aside class="sidebar glass">
-        <div class="logo">
-            <span class="icon">🌌</span>
-            <span class="brand">LIFEVERSE</span>
-            <span class="badge-pro">∞</span>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li class="active" data-section="hero"><span class="nav-icon">🏠</span> Bosh sahifa</li>
-                <li data-section="earth"><span class="nav-icon">🌍</span> Yer</li>
-                <li data-section="universe"><span class="nav-icon">🌌</span> Koinot</li>
-                <li data-section="animals"><span class="nav-icon">🦁</span> Hayvonlar</li>
-                <li data-section="nature"><span class="nav-icon">🌿</span> Tabiat</li>
-                <li data-section="human"><span class="nav-icon">🧬</span> Inson</li>
-                <li data-section="science"><span class="nav-icon">🔬</span> Fan</li>
-                <li data-section="technology"><span class="nav-icon">💻</span> Texnologiya</li>
-                <li data-section="history"><span class="nav-icon">🏛️</span> Tarix</li>
-                <li data-section="future"><span class="nav-icon">🚀</span> Kelajak</li>
-                <li data-section="gallery"><span class="nav-icon">🖼️</span> Galereya</li>
-                <li data-section="statistics"><span class="nav-icon">📊</span> Statistika</li>
-                <li data-section="timeline"><span class="nav-icon">⏳</span> Xronologiya</li>
-                <li data-section="faq"><span class="nav-icon">❓</span> Savollar</li>
-                <li data-section="contact"><span class="nav-icon">📧</span> Kontakt</li>
-            </ul>
-        </nav>
-        <div class="user-card">
-            <div class="avatar">🧑‍🚀</div>
-            <div class="user-info">
-                <span class="name">Koinot izlovchi</span>
-                <span class="role">LIFEVERSE</span>
+        <!-- SIDEBAR -->
+        <aside class="sidebar glass" id="sidebar">
+            <div class="logo">
+                <span class="icon">🌌</span>
+                <span class="brand">LIFEVERSE</span>
+                <span class="badge-pro">v5.0</span>
             </div>
-            <div class="status-dot"></div>
-        </div>
-        <div class="sidebar-footer">
-            <span>⚙️</span><span>🌙</span><span>❓</span>
-        </div>
-    </aside>
 
-    <!-- ========== ASOSIY MAZMUN ========== -->
-    <main class="main-content">
+            <nav class="nav">
+                <ul>
+                    <li class="active" data-section="hero"><span class="nav-icon">🏠</span> <span class="nav-text">Bosh
+                            sahifa</span></li>
+                    <li data-section="earth"><span class="nav-icon">🌍</span> <span class="nav-text">Yer
+                            sayyorasi</span></li>
+                    <li data-section="universe"><span class="nav-icon">🌌</span> <span class="nav-text">Koinot</span>
+                    </li>
+                    <li data-section="space"><span class="nav-icon">🚀</span> <span class="nav-text">Kosmik
+                            tadqiqotlar</span></li>
+                    <li data-section="animals"><span class="nav-icon">🦁</span> <span class="nav-text">Hayvonot
+                            olami</span></li>
+                    <li data-section="nature"><span class="nav-icon">🌿</span> <span class="nav-text">Tabiat</span></li>
+                    <li data-section="biodiversity"><span class="nav-icon">🦋</span> <span class="nav-text">Bio
+                            xilma-xillik</span></li>
+                    <li data-section="human"><span class="nav-icon">🧬</span> <span class="nav-text">Inson</span></li>
+                    <li data-section="achievements"><span class="nav-icon">🏆</span> <span class="nav-text">Insoniyat
+                            yutuqlari</span></li>
+                    <li data-section="science"><span class="nav-icon">🔬</span> <span class="nav-text">Fan</span></li>
+                    <li data-section="technology"><span class="nav-icon">💻</span> <span
+                            class="nav-text">Texnologiya</span></li>
+                    <li data-section="climate"><span class="nav-icon">🌡️</span> <span class="nav-text">Iqlim &amp;
+                            Atrof-muhit</span></li>
+                    <li data-section="history"><span class="nav-icon">🏛️</span> <span class="nav-text">Tarix</span>
+                    </li>
+                    <li data-section="future"><span class="nav-icon">🚀</span> <span class="nav-text">Kelajak</span>
+                    </li>
+                    <li data-section="gallery"><span class="nav-icon">🖼️</span> <span class="nav-text">Galereya</span>
+                    </li>
+                    <li data-section="database"><span class="nav-icon">📊</span> <span class="nav-text">Ma'lumotlar
+                            bazasi</span></li>
+                    <li data-section="quiz"><span class="nav-icon">❓</span> <span class="nav-text">Interaktiv
+                            Quiz</span></li>
+                    <li data-section="statistics"><span class="nav-icon">📈</span> <span
+                            class="nav-text">Statistika</span></li>
+                    <li data-section="timeline"><span class="nav-icon">⏳</span> <span
+                            class="nav-text">Xronologiya</span></li>
+                    <li data-section="faq"><span class="nav-icon">❔</span> <span class="nav-text">Savollar</span></li>
+                    <li data-section="contact"><span class="nav-icon">📧</span> <span class="nav-text">Kontakt</span>
+                    </li>
+                </ul>
+            </nav>
 
-        <!-- ====== HERO SECTION ====== -->
-        <section id="hero" class="hero-section">
-            <div class="hero-bg">
-                <video autoplay muted loop id="heroVideo">
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                </video>
-                <div class="hero-overlay"></div>
-                <div class="particles" id="particles"></div>
-            </div>
-            <div class="hero-content">
-                <div class="hero-badge">🌌 LIFEVERSE v4.0</div>
-                <h1 class="hero-title">
-                    <span class="typing-text">Bir sayt. Butun dunyo.</span>
-                </h1>
-                <p class="hero-sub">Texnologiya, tabiat, fan va kelajak — barchasi bir platformada</p>
-                <div class="hero-buttons">
-                    <button class="btn-primary glow" id="exploreBtn">🚀 KASHF ET</button>
-                    <button class="btn-secondary" id="watchBtn">▶️ TRAILER</button>
+            <div class="user-card glass">
+                <div class="avatar">🧑‍🚀</div>
+                <div class="user-info">
+                    <span class="name">Koinot izlovchi</span>
+                    <span class="role">LIFEVERSE Explorer • Level 42</span>
                 </div>
-                <div class="scroll-indicator">
-                    <span>↓</span>
-                    <span>↓</span>
-                    <span>↓</span>
+                <div class="status-dot"></div>
+            </div>
+
+            <div class="sidebar-footer">
+                <span title="Sozlamalar">⚙️</span>
+                <span title="Tema" id="sidebarThemeBtn">🌙</span>
+                <span title="Yordam">❓</span>
+                <span title="Chiqish">🚪</span>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TOP HEADER -->
+            <header class="top-header glass">
+                <div class="search-wrapper">
+                    <span>🔍</span>
+                    <input type="text" id="globalSearch" placeholder="Qidirish: Yer, Koinot, Hayvonlar, Quiz... (⌘K)">
+                    <span class="search-shortcut">⌘K</span>
                 </div>
-            </div>
-            <!-- Meteorlar -->
-            <div class="meteor-container">
-                <div class="meteor"></div>
-                <div class="meteor"></div>
-                <div class="meteor"></div>
-                <div class="meteor"></div>
-                <div class="meteor"></div>
-            </div>
-        </section>
 
-        <!-- ====== EARTH SECTION ====== -->
-        <section id="earth" class="section-earth glass">
-            <div class="section-header">
-                <h2>🌍 Yer sayyorasi</h2>
-                <p>Uydagi koinot</p>
-            </div>
-            <div class="earth-grid">
-                <div class="earth-card glass">
-                    <div class="earth-icon">🌍</div>
-                    <h3>Yer diametri</h3>
-                    <p class="earth-value">12,742 km</p>
+                <div class="header-actions">
+                    <div class="action-btn" id="notifBtn" title="Bildirishnomalar">🔔</div>
+                    <div class="action-btn" id="themeToggleBtn" title="Tema o'zgartirish">🌙</div>
+                    <div class="action-btn" id="fullscreenBtn" title="To'liq ekran">⛶</div>
+                    <div class="action-btn" id="profileBtn" title="Profil">👤</div>
                 </div>
-                <div class="earth-card glass">
-                    <div class="earth-icon">👥</div>
-                    <h3>Aholi soni</h3>
-                    <p class="earth-value counter" data-target="8200000000">8.2 mlrd</p>
+            </header>
+
+            <!-- HERO SECTION -->
+            <section id="hero" class="hero-section">
+                <div class="hero-bg">
+                    <video autoplay muted loop playsinline id="heroVideo">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero-overlay"></div>
+                    <div class="particles" id="particles"></div>
+                    <canvas id="heroCanvas" class="hero-canvas"></canvas>
                 </div>
-                <div class="earth-card glass">
-                    <div class="earth-icon">🏳️</div>
-                    <h3>Davlatlar</h3>
-                    <p class="earth-value counter" data-target="195">195</p>
-                </div>
-                <div class="earth-card glass">
-                    <div class="earth-icon">🌊</div>
-                    <h3>Okeanlar</h3>
-                    <p class="earth-value counter" data-target="5">5</p>
-                </div>
-                <div class="earth-card glass">
-                    <div class="earth-icon">🏔️</div>
-                    <h3>Tog'lar</h3>
-                    <p class="earth-value">14,800+</p>
-                </div>
-                <div class="earth-card glass">
-                    <div class="earth-icon">🏜️</div>
-                    <h3>Cho'llar</h3>
-                    <p class="earth-value">33 ta</p>
-                </div>
-                <div class="earth-card glass">
-                    <div class="earth-icon">❄️</div>
-                    <h3>Muzliklar</h3>
-                    <p class="earth-value">198,000</p>
-                </div>
-                <div class="earth-card glass">
-                    <div class="earth-icon">🌋</div>
-                    <h3>Vulkanlar</h3>
-                    <p class="earth-value">1,500+</p>
-                </div>
-            </div>
-            <div class="earth-map glass">
-                <div class="map-placeholder">🗺️ Yer xaritasi (interaktiv)</div>
-                <div class="map-stats">
-                    <span>🌊 71% suv</span>
-                    <span>🌍 29% quruqlik</span>
-                </div>
-            </div>
-        </section>
 
-        <!-- ====== UNIVERSE SECTION ====== -->
-        <section id="universe" class="section-universe glass">
-            <div class="section-header">
-                <h2>🌌 Koinot</h2>
-                <p>Cheksizlik sari</p>
-            </div>
-            <div class="universe-grid">
-                <div class="universe-card glass"><span class="uni-icon">☀️</span><h3>Quyosh</h3><p>1.4 mln km</p></div>
-                <div class="universe-card glass"><span class="uni-icon">🌙</span><h3>Oy</h3><p>3,474 km</p></div>
-                <div class="universe-card glass"><span class="uni-icon">🪐</span><h3>Sayyoralar</h3><p>8 ta</p></div>
-                <div class="universe-card glass"><span class="uni-icon">🌌</span><h3>Galaktikalar</h3><p>2 trln+</p></div>
-                <div class="universe-card glass"><span class="uni-icon">⭐</span><h3>Yulduzlar</h3><p>10²⁴ ta</p></div>
-                <div class="universe-card glass"><span class="uni-icon">☄️</span><h3>Kometalar</h3><p>3,700+</p></div>
-                <div class="universe-card glass"><span class="uni-icon">🕳️</span><h3>Qora tuynuk</h3><p>100 mln+</p></div>
-                <div class="universe-card glass"><span class="uni-icon">🛸</span><h3>NASA</h3><p>2026</p></div>
-            </div>
-        </section>
+                <div class="hero-content">
+                    <div class="hero-badge">🌌 LIFEVERSE v5.0 ULTRA • 2026</div>
+                    <h1 class="hero-title">
+                        <span class="typing-text">Bir sayt. Butun koinot.</span>
+                    </h1>
+                    <p class="hero-sub">Yer, Tabiat, Inson, Fan, Texnologiya va Kelajak — barchasi bir joyda. 50,000+
+                        fakt, 200+ interaktiv element, real-time ma'lumotlar.</p>
 
-        <!-- ====== ANIMALS SECTION ====== -->
-        <section id="animals" class="section-animals glass">
-            <div class="section-header">
-                <h2>🦁 Hayvonot olami</h2>
-                <p>Yovvoyi tabiat</p>
-            </div>
-            <div class="animals-grid">
-                <div class="animal-card glass"><span>🦁</span><h3>Sher</h3><p>Afrika</p></div>
-                <div class="animal-card glass"><span>🐘</span><h3>Fil</h3><p>Osiyo/Afrika</p></div>
-                <div class="animal-card glass"><span>🐋</span><h3>Kit</h3><p>Okean</p></div>
-                <div class="animal-card glass"><span>🦅</span><h3>Burgut</h3><p>Osmon</p></div>
-                <div class="animal-card glass"><span>🦋</span><h3>Kapalak</h3><p>Dunyo</p></div>
-                <div class="animal-card glass"><span>🐍</span><h3>Ilon</h3><p>Quruqlik</p></div>
-                <div class="animal-card glass"><span>🦈</span><h3>Akula</h3><p>Okean</p></div>
-                <div class="animal-card glass"><span>🐺</span><h3>Bo'ri</h3><p>O'rmon</p></div>
-                <div class="animal-card glass"><span>🦍</span><h3>Gorilla</h3><p>Afrika</p></div>
-                <div class="animal-card glass"><span>🐧</span><h3>Pingvin</h3><p>Antarktida</p></div>
-                <div class="animal-card glass"><span>🦊</span><h3>Tulki</h3><p>Dunyo</p></div>
-                <div class="animal-card glass"><span>🐉</span><h3>Komodo</h3><p>Indoneziya</p></div>
-            </div>
-        </section>
+                    <div class="hero-buttons">
+                        <button class="btn-primary glow" id="exploreBtn">🚀 KASHF ETISHNI BOSHLASH</button>
+                        <button class="btn-secondary" id="watchBtn">▶️ 4K TRAILER KO'RISH</button>
+                        <button class="btn-secondary" id="quizQuickBtn">🎯 2 DAQIQA QUIZ</button>
+                    </div>
 
-        <!-- ====== NATURE SECTION ====== -->
-        <section id="nature" class="section-nature glass">
-            <div class="section-header">
-                <h2>🌿 Tabiat</h2>
-                <p>Yer yuzasining go'zalligi</p>
-            </div>
-            <div class="nature-grid">
-                <div class="nature-card glass"><span>🌳</span><h3>Daraxtlar</h3><p>3.04 trln</p></div>
-                <div class="nature-card glass"><span>🌺</span><h3>Gullar</h3><p>400,000+ tur</p></div>
-                <div class="nature-card glass"><span>🌲</span><h3>O'rmonlar</h3><p>31% yer</p></div>
-                <div class="nature-card glass"><span>🏞️</span><h3>Daryolar</h3><p>500,000+</p></div>
-                <div class="nature-card glass"><span>💦</span><h3>Sharsharalar</h3><p>7,000+</p></div>
-                <div class="nature-card glass"><span>🏔️</span><h3>Milliy bog'lar</h3><p>6,500+</p></div>
-            </div>
-        </section>
-
-        <!-- ====== HUMAN SECTION ====== -->
-        <section id="human" class="section-human glass">
-            <div class="section-header">
-                <h2>🧬 Inson</h2>
-                <p>Biologiya mo''jizasi</p>
-            </div>
-            <div class="human-grid">
-                <div class="human-card glass"><span>🧠</span><h3>Miya</h3><p>86 mlrd neyron</p></div>
-                <div class="human-card glass"><span>❤️</span><h3>Yurak</h3><p>100,000 zarba/kun</p></div>
-                <div class="human-card glass"><span>💪</span><h3>Mushaklar</h3><p>650+</p></div>
-                <div class="human-card glass"><span>🦴</span><h3>Suyaklar</h3><p>206</p></div>
-                <div class="human-card glass"><span>🧬</span><h3>DNK</h3><p>3 mlrd juft</p></div>
-                <div class="human-card glass"><span>🔬</span><h3>Hujayralar</h3><p>37.2 trln</p></div>
-            </div>
-        </section>
-
-        <!-- ====== SCIENCE SECTION ====== -->
-        <section id="science" class="section-science glass">
-            <div class="section-header">
-                <h2>🔬 Fan</h2>
-                <p>Ilm-fan chegaralari</p>
-            </div>
-            <div class="science-grid">
-                <div class="science-card glass"><span>⚛️</span><h3>Fizika</h3><p>Kvant, relyativistik</p></div>
-                <div class="science-card glass"><span>🧪</span><h3>Kimyo</h3><p>118 element</p></div>
-                <div class="science-card glass"><span>🧬</span><h3>Biologiya</h3><p>8.7 mln tur</p></div>
-                <div class="science-card glass"><span>📐</span><h3>Matematika</h3><p>Cheksizlik</p></div>
-                <div class="science-card glass"><span>🪐</span><h3>Astronomiya</h3><p>Koinot 13.8 mlrd yil</p></div>
-            </div>
-        </section>
-
-        <!-- ====== TECHNOLOGY SECTION ====== -->
-        <section id="technology" class="section-tech glass">
-            <div class="section-header">
-                <h2>💻 Texnologiya</h2>
-                <p>Kelajak bugundan boshlanadi</p>
-            </div>
-            <div class="tech-grid">
-                <div class="tech-card glass"><span>🤖</span><h3>AI</h3><p>Sun'iy intellekt</p></div>
-                <div class="tech-card glass"><span>🦾</span><h3>Robotlar</h3><p>Avtomatlashtirish</p></div>
-                <div class="tech-card glass"><span>📱</span><h3>Telefonlar</h3><p>6 mlrd foydalanuvchi</p></div>
-                <div class="tech-card glass"><span>💻</span><h3>Kompyuterlar</h3><p>2 mlrd+</p></div>
-                <div class="tech-card glass"><span>🌐</span><h3>Internet</h3><p>5.3 mlrd foydalanuvchi</p></div>
-                <div class="tech-card glass"><span>⚛️</span><h3>Kvant kompyuter</h3><p>2026</p></div>
-            </div>
-        </section>
-
-        <!-- ====== HISTORY SECTION ====== -->
-        <section id="history" class="section-history glass">
-            <div class="section-header">
-                <h2>🏛️ Tarix</h2>
-                <p>O'tmishdan kelajakka</p>
-            </div>
-            <div class="history-grid">
-                <div class="history-card glass"><span>🇪🇬</span><h3>Piramidalar</h3><p>Misr, 2500 y. av.</p></div>
-                <div class="history-card glass"><span>🏛️</span><h3>Rim imperiyasi</h3><p>27 y. av. - 476 y.</p></div>
-                <div class="history-card glass"><span>⚔️</span><h3>Amir Temur</h3><p>1336-1405</p></div>
-                <div class="history-card glass"><span>🐫</span><h3>Buyuk ipak yo'li</h3><p>130 y. av. - 1453 y.</p></div>
-                <div class="history-card glass"><span>💣</span><h3>Dunyo urushlari</h3><p>1914-1918, 1939-1945</p></div>
-                <div class="history-card glass"><span>🚀</span><h3>Kosmik yosh</h3><p>1957-hozir</p></div>
-            </div>
-        </section>
-
-        <!-- ====== FUTURE SECTION ====== -->
-        <section id="future" class="section-future glass">
-            <div class="section-header">
-                <h2>🚀 Kelajak</h2>
-                <p>Ertangi kun sari</p>
-            </div>
-            <div class="future-grid">
-                <div class="future-card glass"><span>🔴</span><h3>Mars</h3><p>2030-yillar</p></div>
-                <div class="future-card glass"><span>🤖</span><h3>Robotlar</h3><p>Avtonom</p></div>
-                <div class="future-card glass"><span>🧠</span><h3>Sun'iy intellekt</h3><p>AGI 2050</p></div>
-                <div class="future-card glass"><span>✈️</span><h3>Uchuvchi mashinalar</h3><p>2030</p></div>
-                <div class="future-card glass"><span>🏙️</span><h3>Aqlli shaharlar</h3><p>2026-2040</p></div>
-                <div class="future-card glass"><span>🌌</span><h3>Koinot turizmi</h3><p>2027</p></div>
-            </div>
-        </section>
-
-        <!-- ====== GALLERY SECTION ====== -->
-        <section id="gallery" class="section-gallery glass">
-            <div class="section-header">
-                <h2>🖼️ Galereya</h2>
-                <p>100+ rasm va 50+ video</p>
-            </div>
-            <div class="gallery-slider" id="gallerySlider">
-                <div class="gallery-track" id="galleryTrack">
-                    <div class="gallery-slide"><div class="gallery-item glass">🌍 Yer</div></div>
-                    <div class="gallery-slide"><div class="gallery-item glass">🌌 Koinot</div></div>
-                    <div class="gallery-slide"><div class="gallery-item glass">🦁 Hayvon</div></div>
-                    <div class="gallery-slide"><div class="gallery-item glass">🌿 Tabiat</div></div>
-                    <div class="gallery-slide"><div class="gallery-item glass">🧬 Inson</div></div>
-                    <div class="gallery-slide"><div class="gallery-item glass">🔬 Fan</div></div>
-                    <div class="gallery-slide"><div class="gallery-item glass">💻 Texnologiya</div></div>
-                    <div class="gallery-slide"><div class="gallery-item glass">🏛️ Tarix</div></div>
-                    <div class="gallery-slide"><div class="gallery-item glass">🚀 Kelajak</div></div>
-                    <div class="gallery-slide"><div class="gallery-item glass">🌊 Okean</div></div>
-                </div>
-                <button class="gallery-btn prev" id="galleryPrev">‹</button>
-                <button class="gallery-btn next" id="galleryNext">›</button>
-            </div>
-            <div class="video-grid">
-                <div class="video-card glass" onclick="openVideo('https://www.w3schools.com/html/mov_bbb.mp4')">🎬 Video 1</div>
-                <div class="video-card glass" onclick="openVideo('https://www.w3schools.com/html/mov_bbb.mp4')">🎬 Video 2</div>
-                <div class="video-card glass" onclick="openVideo('https://www.w3schools.com/html/mov_bbb.mp4')">🎬 Video 3</div>
-                <div class="video-card glass" onclick="openVideo('https://www.w3schools.com/html/mov_bbb.mp4')">🎬 Video 4</div>
-                <div class="video-card glass" onclick="openVideo('https://www.w3schools.com/html/mov_bbb.mp4')">🎬 Video 5</div>
-            </div>
-        </section>
-
-        <!-- ====== STATISTICS SECTION ====== -->
-        <section id="statistics" class="section-stats glass">
-            <div class="section-header">
-                <h2>📊 Statistika</h2>
-                <p>Raqamlardagi dunyo</p>
-            </div>
-            <div class="stats-grid">
-                <div class="stat-card glass"><span class="stat-icon">🏳️</span><h3 class="counter" data-target="195">0</h3><p>Davlat</p></div>
-                <div class="stat-card glass"><span class="stat-icon">👥</span><h3 class="counter" data-target="8000000000">0</h3><p>Aholi</p></div>
-                <div class="stat-card glass"><span class="stat-icon">🌍</span><h3 class="counter" data-target="7">0</h3><p>Qit'a</p></div>
-                <div class="stat-card glass"><span class="stat-icon">🌊</span><h3 class="counter" data-target="5">0</h3><p>Okean</p></div>
-                <div class="stat-card glass"><span class="stat-icon">🌍</span><h3 class="counter" data-target="1">0</h3><p>Yer</p></div>
-                <div class="stat-card glass"><span class="stat-icon">☀️</span><h3 class="counter" data-target="1">0</h3><p>Quyosh</p></div>
-            </div>
-        </section>
-
-        <!-- ====== TIMELINE SECTION ====== -->
-        <section id="timeline" class="section-timeline glass">
-            <div class="section-header">
-                <h2>⏳ Xronologiya</h2>
-                <p>Yerning paydo bo'lishidan hozirgacha</p>
-            </div>
-            <div class="timeline-container">
-                <div class="timeline-item glass"><span>🌍</span><h3>4.5 mlrd yil</h3><p>Yer paydo bo'ldi</p></div>
-                <div class="timeline-item glass"><span>🧬</span><h3>3.5 mlrd yil</h3><p>Birinchi hayot</p></div>
-                <div class="timeline-item glass"><span>🦕</span><h3>230 mln yil</h3><p>Dinozavrlar</p></div>
-                <div class="timeline-item glass"><span>🧑</span><h3>300,000 yil</h3><p>Inson paydo bo'ldi</p></div>
-                <div class="timeline-item glass"><span>🏛️</span><h3>10,000 yil</h3><p>Dehqonchilik</p></div>
-                <div class="timeline-item glass"><span>💻</span><h3>1945 yil</h3><p>Birinchi kompyuter</p></div>
-                <div class="timeline-item glass"><span>🚀</span><h3>2026 yil</h3><p>LIFEVERSE</p></div>
-            </div>
-        </section>
-
-        <!-- ====== FAQ SECTION ====== -->
-        <section id="faq" class="section-faq glass">
-            <div class="section-header">
-                <h2>❓ Ko'p so'raladigan savollar</h2>
-                <p>50 ta savol va javob</p>
-            </div>
-            <div class="faq-grid">
-                <div class="faq-item glass"><h4>🌍 Yer qanday paydo bo'ldi?</h4><p>Yer 4.5 mlrd yil oldin Quyosh atrofidagi changdan shakllangan.</p></div>
-                <div class="faq-item glass"><h4>🌌 Koinot necha yoshda?</h4><p>13.8 mlrd yil.</p></div>
-                <div class="faq-item glass"><h4>🧬 Inson DNKsi necha juftdan iborat?</h4><p>3 mlrd juft.</p></div>
-                <div class="faq-item glass"><h4>🌊 Okeanlar necha foiz?</h4><p>71%.</p></div>
-                <div class="faq-item glass"><h4>🦁 Eng katta hayvon?</h4><p>Moviy kit (30 m, 200 t).</p></div>
-                <div class="faq-item glass"><h4>⚛️ Atom necha yoshda?</h4><p>Koinot yoshida.</p></div>
-            </div>
-        </section>
-
-        <!-- ====== CONTACT SECTION ====== -->
-        <section id="contact" class="section-contact glass">
-            <div class="section-header">
-                <h2>📧 Kontakt</h2>
-                <p>Biz bilan bog'laning</p>
-            </div>
-            <div class="contact-container glass">
-                <form id="contactForm" class="contact-form">
-                    <input type="text" placeholder="Ismingiz" required class="glass-input">
-                    <input type="email" placeholder="Email" required class="glass-input">
-                    <input type="text" placeholder="Mavzu" class="glass-input">
-                    <textarea placeholder="Xabar" rows="4" required class="glass-input"></textarea>
-                    <button type="submit" class="btn-primary glow">📤 Yuborish</button>
-                </form>
-                <div class="contact-info">
-                    <p>📧 info@lifverse.uz</p>
-                    <p>📞 +998 99 999 99 99</p>
-                    <p>🌐 lifverse.uz</p>
-                    <div class="social-links">
-                        <span>📱</span><span>🐦</span><span>📸</span><span>🎵</span>
+                    <div class="hero-stats">
+                        <div class="hero-stat"><span>8.2 mlrd</span> Foydalanuvchi</div>
+                        <div class="hero-stat"><span>142</span> Mamlakat</div>
+                        <div class="hero-stat"><span>4.8</span> Reyting</div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- ====== FOOTER ====== -->
-        <footer class="main-footer glass">
-            <div class="footer-grid">
-                <div class="footer-col"><h4>🌌 LIFEVERSE</h4><p>2026 · global loyiha</p><p>100M+ qator</p></div>
-                <div class="footer-col"><h4>🔗 Manbalar</h4><ul><li>NASA</li><li>ESA</li><li>UzSpace</li></ul></div>
-                <div class="footer-col"><h4>📌 Bo'limlar</h4><ul><li>Yer</li><li>Koinot</li><li>Hayvonlar</li></ul></div>
-                <div class="footer-col"><h4>⚡ Tezkor</h4><ul><li>Statistika</li><li>Galereya</li><li>FAQ</li></ul></div>
-                <div class="footer-col"><h4>📱 Ijtimoiy</h4><ul><li>Telegram</li><li>Twitter</li><li>Instagram</li></ul></div>
-                <div class="footer-col"><h4>🌐 Tarmoq</h4><ul><li>Yer</li><li>Koinot</li><li>Kelajak</li></ul></div>
-            </div>
-            <div class="footer-bottom">
-                <span>© 2026 LIFEVERSE · Barcha huquqlar himoya</span>
-                <span class="footer-version">v4.0 ULTRA</span>
-            </div>
-        </footer>
+                <!-- Meteors -->
+                <div class="meteor-container" id="meteorContainer"></div>
 
-    </main>
-</div>
+                <div class="scroll-indicator">
+                    <span>SCROLL ↓</span>
+                </div>
+            </section>
 
-<!-- VIDEO MODAL -->
-<div id="videoModal" class="video-modal">
-    <div class="video-modal-content">
-        <span class="close-modal" id="closeVideoModal">×</span>
-        <video id="modalVideo" controls autoplay>
-            <source src="" type="video/mp4">
-        </video>
+            <!-- EARTH SECTION -->
+            <section id="earth" class="section-earth glass scroll-animate">
+                <div class="section-header">
+                    <h2>🌍 Yer sayyorasi</h2>
+                    <p>Bizning uyimiz — 4.5 milliard yillik mo''jiza</p>
+                </div>
+
+                <div class="earth-grid">
+                    <div class="earth-card glass">
+                        <div class="earth-icon">🌍</div>
+                        <h3>Diametr</h3>
+                        <p class="earth-value">12,742 km</p>
+                    </div>
+                    <div class="earth-card glass">
+                        <div class="earth-icon">👥</div>
+                        <h3>Aholi</h3>
+                        <p class="earth-value counter" data-target="8200000000">0</p>
+                    </div>
+                    <div class="earth-card glass">
+                        <div class="earth-icon">🏳️</div>
+                        <h3>Davlatlar</h3>
+                        <p class="earth-value counter" data-target="195">0</p>
+                    </div>
+                    <div class="earth-card glass">
+                        <div class="earth-icon">🌊</div>
+                        <h3>Okeanlar</h3>
+                        <p class="earth-value counter" data-target="5">0</p>
+                    </div>
+                    <div class="earth-card glass">
+                        <div class="earth-icon">🏔️</div>
+                        <h3>Tog'lar</h3>
+                        <p class="earth-value">14,800+</p>
+                    </div>
+                    <div class="earth-card glass">
+                        <div class="earth-icon">🏜️</div>
+                        <h3>Cho'llar</h3>
+                        <p class="earth-value">33 ta</p>
+                    </div>
+                    <div class="earth-card glass">
+                        <div class="earth-icon">❄️</div>
+                        <h3>Muzliklar</h3>
+                        <p class="earth-value">198,000</p>
+                    </div>
+                    <div class="earth-card glass">
+                        <div class="earth-icon">🌋</div>
+                        <h3>Faol vulkanlar</h3>
+                        <p class="earth-value">1,500+</p>
+                    </div>
+                </div>
+
+                <div class="earth-map glass">
+                    <div class="map-placeholder">
+                        <div class="map-inner">
+                            🗺️ Interaktiv Yer xaritasi<br>
+                            <small>Bosing va ma'lumot oling (tez orada to'liq 3D)</small>
+                        </div>
+                    </div>
+                    <div class="map-stats">
+                        <span>🌊 71% suv</span>
+                        <span>🌍 29% quruqlik</span>
+                        <span>🌡️ O'rtacha harorat: 15°C</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- UNIVERSE SECTION -->
+            <section id="universe" class="section-universe glass scroll-animate">
+                <div class="section-header">
+                    <h2>🌌 Koinot</h2>
+                    <p>Cheksizlikning cheksizligi</p>
+                </div>
+                <div class="universe-grid">
+                    <div class="universe-card glass"><span class="uni-icon">☀️</span>
+                        <h3>Quyosh</h3>
+                        <p>1.39 mln km diametr</p>
+                    </div>
+                    <div class="universe-card glass"><span class="uni-icon">🌙</span>
+                        <h3>Oy</h3>
+                        <p>3,474 km diametr</p>
+                    </div>
+                    <div class="universe-card glass"><span class="uni-icon">🪐</span>
+                        <h3>Sayyoralar</h3>
+                        <p>8 ta (Quyosh tizimi)</p>
+                    </div>
+                    <div class="universe-card glass"><span class="uni-icon">🌌</span>
+                        <h3>Galaktikalar</h3>
+                        <p>2+ trillion</p>
+                    </div>
+                    <div class="universe-card glass"><span class="uni-icon">⭐</span>
+                        <h3>Yulduzlar</h3>
+                        <p>~10²⁴ ta</p>
+                    </div>
+                    <div class="universe-card glass"><span class="uni-icon">☄️</span>
+                        <h3>Kometalar</h3>
+                        <p>3,700+ ma'lum</p>
+                    </div>
+                    <div class="universe-card glass"><span class="uni-icon">🕳️</span>
+                        <h3>Qora tuynuklar</h3>
+                        <p>100 mln+ taxminiy</p>
+                    </div>
+                    <div class="universe-card glass"><span class="uni-icon">🛸</span>
+                        <h3>Exoplanetalar</h3>
+                        <p>5,500+ tasdiqlangan</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEW: SPACE EXPLORATION SECTION -->
+            <section id="space" class="section-space glass scroll-animate">
+                <div class="section-header">
+                    <h2>🚀 Kosmik tadqiqotlar</h2>
+                    <p>Insoniyatning eng buyuk sarguzashtlari</p>
+                </div>
+
+                <div class="space-grid">
+                    <div class="space-card glass">
+                        <span class="space-icon">🛰️</span>
+                        <h3>Xalqaro kosmik stansiya (ISS)</h3>
+                        <p>1998-yildan beri orbitada • 250+ astronavt tashrif buyurgan</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%"></div>
+                        </div>
+                        <small>24/7 faol • 400 km balandlikda</small>
+                    </div>
+                    <div class="space-card glass">
+                        <span class="space-icon">🔴</span>
+                        <h3>Mars Perseverance</h3>
+                        <p>2021-yildan beri Marsda • 23 km bosib o'tgan • 20+ namuna yig'ilgan</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 78%"></div>
+                        </div>
+                        <small>Sample Return 2028-yil rejalashtirilgan</small>
+                    </div>
+                    <div class="space-card glass">
+                        <span class="space-icon">🔭</span>
+                        <h3>James Webb kosmik teleskopi</h3>
+                        <p>2021-yildan beri • 1.5 mln km masofada • 13.5 mlrd yil oldingi galaktikalar</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <small>Eng kuchli kosmik teleskop</small>
+                    </div>
+                    <div class="space-card glass">
+                        <span class="space-icon">🌕</span>
+                        <h3>Artemis dasturi</h3>
+                        <p>2026-yil Oyga qaytish • 2028-yil Artemis III • 2030-yillar Mars</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%"></div>
+                        </div>
+                        <small>NASA + ESA + JAXA + Roscosmos</small>
+                    </div>
+                    <div class="space-card glass">
+                        <span class="space-icon">🪐</span>
+                        <h3>Europa Clipper</h3>
+                        <p>2024-yil uchirilgan • Yupiterning muzli oyiga • Hayot izlari?</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%"></div>
+                        </div>
+                        <small>2030-yil yetib boradi</small>
+                    </div>
+                    <div class="space-card glass">
+                        <span class="space-icon">🛸</span>
+                        <h3>SpaceX Starship</h3>
+                        <p>2023-yildan testlar • 100+ odam Marsga • 2026-yil orbital parvoz</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                        <small>Eng katta raketa tarixda</small>
+                    </div>
+                </div>
+
+                <div class="space-stats glass">
+                    <div>🛰️ 7,500+ sun'iy yo'ldosh orbitada</div>
+                    <div>👨‍🚀 600+ kishi kosmosda bo'lgan</div>
+                    <div>🌌 13.8 mlrd yil — koinot yoshi</div>
+                </div>
+            </section>
+
+            <!-- ANIMALS SECTION -->
+            <section id="animals" class="section-animals glass scroll-animate">
+                <div class="section-header">
+                    <h2>🦁 Hayvonot olami</h2>
+                    <p>Yer yuzasidagi eng ajoyib jonzotlar</p>
+                </div>
+                <div class="animals-grid">
+                    <div class="animal-card glass"><span>🦁</span>
+                        <h3>Sher</h3>
+                        <p>Afrika • 20,000 qolgan</p>
+                    </div>
+                    <div class="animal-card glass"><span>🐘</span>
+                        <h3>Afrika fili</h3>
+                        <p>415,000 qolgan</p>
+                    </div>
+                    <div class="animal-card glass"><span>🐋</span>
+                        <h3>Moviy kit</h3>
+                        <p>Eng katta hayvon (200 t)</p>
+                    </div>
+                    <div class="animal-card glass"><span>🦅</span>
+                        <h3>Golden burgut</h3>
+                        <p>Osmon qiroli</p>
+                    </div>
+                    <div class="animal-card glass"><span>🦋</span>
+                        <h3>Monarx kapalagi</h3>
+                        <p>4,000 km migratsiya</p>
+                    </div>
+                    <div class="animal-card glass"><span>🐼</span>
+                        <h3>Gigant panda</h3>
+                        <p>1,800 qolgan (Xitoy)</p>
+                    </div>
+                    <div class="animal-card glass"><span>🦈</span>
+                        <h3>Oq akula</h3>
+                        <p>Eng xavfli yirtqich</p>
+                    </div>
+                    <div class="animal-card glass"><span>🦍</span>
+                        <h3>Tog' gorilla</h3>
+                        <p>1,000 qolgan</p>
+                    </div>
+                    <div class="animal-card glass"><span>🐧</span>
+                        <h3>Imperator pingvin</h3>
+                        <p>Antarktida</p>
+                    </div>
+                    <div class="animal-card glass"><span>🦒</span>
+                        <h3>Jirafa</h3>
+                        <p>Eng baland hayvon</p>
+                    </div>
+                    <div class="animal-card glass"><span>🐅</span>
+                        <h3>Bengal yo'lbarsi</h3>
+                        <p>2,500 qolgan</p>
+                    </div>
+                    <div class="animal-card glass"><span>🐉</span>
+                        <h3>Komodo ajdaho</h3>
+                        <p>Indoneziya</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NATURE SECTION -->
+            <section id="nature" class="section-nature glass scroll-animate">
+                <div class="section-header">
+                    <h2>🌿 Tabiat</h2>
+                    <p>Yer yuzasining go'zalligi va boyligi</p>
+                </div>
+                <div class="nature-grid">
+                    <div class="nature-card glass"><span>🌳</span>
+                        <h3>Daraxtlar</h3>
+                        <p>3.04 trillion</p>
+                    </div>
+                    <div class="nature-card glass"><span>🌺</span>
+                        <h3>Gullar turlari</h3>
+                        <p>400,000+</p>
+                    </div>
+                    <div class="nature-card glass"><span>🌲</span>
+                        <h3>O'rmonlar</h3>
+                        <p>31% yer yuzasi</p>
+                    </div>
+                    <div class="nature-card glass"><span>🏞️</span>
+                        <h3>Daryolar</h3>
+                        <p>500,000+ katta</p>
+                    </div>
+                    <div class="nature-card glass"><span>💦</span>
+                        <h3>Sharsharalar</h3>
+                        <p>7,000+ katta</p>
+                    </div>
+                    <div class="nature-card glass"><span>🏔️</span>
+                        <h3>Milliy bog'lar</h3>
+                        <p>6,500+ dunyoda</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEW: BIODIVERSITY SECTION -->
+            <section id="biodiversity" class="section-biodiversity glass scroll-animate">
+                <div class="section-header">
+                    <h2>🦋 Bio xilma-xillik</h2>
+                    <p>Hayotning rang-barangligi va himoyasi</p>
+                </div>
+
+                <div class="biodiv-grid">
+                    <div class="biodiv-card glass">
+                        <h3>🌍 Umumiy turlar</h3>
+                        <p class="big-number">8.7 million</p>
+                        <p>Taxminan 8.7 mln turdagi hayvon, o'simlik va mikroorganizmlar</p>
+                    </div>
+                    <div class="biodiv-card glass">
+                        <h3>⚠️ Xavf ostidagi turlar</h3>
+                        <p class="big-number">42,100+</p>
+                        <p>IUCN Qizil ro'yxatida — yo'qolib borayotgan</p>
+                    </div>
+                    <div class="biodiv-card glass">
+                        <h3>🌳 O'rmonlar yo'qolishi</h3>
+                        <p class="big-number">10 mln ga/yil</p>
+                        <p>Har yili 10 million gektar o'rmon yo'qolmoqda</p>
+                    </div>
+                    <div class="biodiv-card glass">
+                        <h3>🛡️ Himoyalangan hududlar</h3>
+                        <p class="big-number">17%</p>
+                        <p>Yer quruqligining 17% muhofaza qilinadi</p>
+                    </div>
+                </div>
+
+                <div class="conservation glass">
+                    <h4>🌱 Muhim saqlash loyihalari</h4>
+                    <div class="conservation-list">
+                        <div class="cons-item">✅ Amazon o'rmonlarini himoya qilish</div>
+                        <div class="cons-item">✅ Katta to'siq rifini tiklash</div>
+                        <div class="cons-item">✅ Yo'lbars populyatsiyasini tiklash (2030 maqsad: 6,000)</div>
+                        <div class="cons-item">✅ Plastmass ifloslanishini kamaytirish (2030)</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HUMAN SECTION -->
+            <section id="human" class="section-human glass scroll-animate">
+                <div class="section-header">
+                    <h2>🧬 Inson — biologik mo''jiza</h2>
+                    <p>Eng murakkab tizim</p>
+                </div>
+                <div class="human-grid">
+                    <div class="human-card glass"><span>🧠</span>
+                        <h3>Miya</h3>
+                        <p>86 mlrd neyron • 100 trln sinaps</p>
+                    </div>
+                    <div class="human-card glass"><span>❤️</span>
+                        <h3>Yurak</h3>
+                        <p>100,000 zarba/kun • 2.5 mlrd marta umr davomida</p>
+                    </div>
+                    <div class="human-card glass"><span>💪</span>
+                        <h3>Mushaklar</h3>
+                        <p>650+ ta • 40% tana vazni</p>
+                    </div>
+                    <div class="human-card glass"><span>🦴</span>
+                        <h3>Suyaklar</h3>
+                        <p>206 ta • 1/4 qismi oyoqlarda</p>
+                    </div>
+                    <div class="human-card glass"><span>🧬</span>
+                        <h3>DNK</h3>
+                        <p>3 mlrd juft • 99.9% bir xil barcha odamlarda</p>
+                    </div>
+                    <div class="human-card glass"><span>🔬</span>
+                        <h3>Hujayralar</h3>
+                        <p>37.2 trillion • Har sekund 2 mln yangi hosil bo'ladi</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEW: ACHIEVEMENTS SECTION -->
+            <section id="achievements" class="section-achievements glass scroll-animate">
+                <div class="section-header">
+                    <h2>🏆 Insoniyatning eng buyuk yutuqlari</h2>
+                    <p>Biz qanday mo''jizalarni yaratdik?</p>
+                </div>
+
+                <div class="achievements-grid" id="achievementsGrid">
+                    <!-- Populated by JS -->
+                </div>
+
+                <div class="achievements-stats glass">
+                    <p>🏅 Siz hozir <span id="unlockedCount">18</span>/25 yutuqni ochgansiz • <span
+                            id="achievementProgress">72%</span></p>
+                    <button class="btn-primary" id="resetAchievementsBtn">Yutuqlarni qayta tiklash</button>
+                </div>
+            </section>
+
+            <!-- SCIENCE SECTION -->
+            <section id="science" class="section-science glass scroll-animate">
+                <div class="section-header">
+                    <h2>🔬 Fan</h2>
+                    <p>Ilm-fan chegaralari</p>
+                </div>
+                <div class="science-grid">
+                    <div class="science-card glass"><span>⚛️</span>
+                        <h3>Fizika</h3>
+                        <p>Kvant mexanikasi • Relyativistik fizika • Qora tuynuklar</p>
+                    </div>
+                    <div class="science-card glass"><span>🧪</span>
+                        <h3>Kimyo</h3>
+                        <p>118 element • Organik sintez • Nanotexnologiya</p>
+                    </div>
+                    <div class="science-card glass"><span>🧬</span>
+                        <h3>Biologiya</h3>
+                        <p>8.7 mln tur • CRISPR • Sintetik biologiya</p>
+                    </div>
+                    <div class="science-card glass"><span>📐</span>
+                        <h3>Matematika</h3>
+                        <p>Cheksizlik • Topologiya • Sun'iy intellekt matematikasi</p>
+                    </div>
+                    <div class="science-card glass"><span>🪐</span>
+                        <h3>Astronomiya</h3>
+                        <p>Koinot 13.8 mlrd yil • Qora materiya • Multivers</p>
+                    </div>
+                    <div class="science-card glass"><span>🧠</span>
+                        <h3>Neuroscience</h3>
+                        <p>Miya xaritalash • Ong sirlarini ochish</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TECHNOLOGY SECTION -->
+            <section id="technology" class="section-tech glass scroll-animate">
+                <div class="section-header">
+                    <h2>💻 Texnologiya</h2>
+                    <p>Kelajak bugundan boshlanadi</p>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card glass"><span>🤖</span>
+                        <h3>Sun'iy intellekt</h3>
+                        <p>GPT-5 • AGI 2030 • Multimodal modellar</p>
+                    </div>
+                    <div class="tech-card glass"><span>🦾</span>
+                        <h3>Robototexnika</h3>
+                        <p>Avtonom robotlar • Boston Dynamics • Optimus</p>
+                    </div>
+                    <div class="tech-card glass"><span>📱</span>
+                        <h3>Smartfonlar</h3>
+                        <p>6.8 mlrd foydalanuvchi • 5G/6G</p>
+                    </div>
+                    <div class="tech-card glass"><span>💻</span>
+                        <h3>Kvant kompyuterlar</h3>
+                        <p>IBM Condor • 1000+ qubit • 2026 yil</p>
+                    </div>
+                    <div class="tech-card glass"><span>🌐</span>
+                        <h3>Internet</h3>
+                        <p>5.5 mlrd foydalanuvchi • Starlink • Web3</p>
+                    </div>
+                    <div class="tech-card glass"><span>🧬</span>
+                        <h3>Biotech</h3>
+                        <p>CRISPR • Organ yetishtirish • Uzun umr</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEW: CLIMATE SECTION -->
+            <section id="climate" class="section-climate glass scroll-animate">
+                <div class="section-header">
+                    <h2>🌡️ Iqlim va Atrof-muhit</h2>
+                    <p>Yerimizning hozirgi holati va kelajagi</p>
+                </div>
+
+                <div class="climate-grid">
+                    <div class="climate-card glass">
+                        <span class="climate-icon">🌡️</span>
+                        <h3>Global harorat o'sishi</h3>
+                        <p class="climate-value">+1.5°C</p>
+                        <p>1850-yildan beri • 2030-yilgacha +1.5°C chegara</p>
+                        <div class="mini-chart" id="tempChart"></div>
+                    </div>
+                    <div class="climate-card glass">
+                        <span class="climate-icon">🌊</span>
+                        <h3>Dengiz sathi ko'tarilishi</h3>
+                        <p class="climate-value">+21 cm</p>
+                        <p>1880-yildan beri • 2100-yilgacha +1 m gacha</p>
+                    </div>
+                    <div class="climate-card glass">
+                        <span class="climate-icon">🏭</span>
+                        <h3>CO₂ konsentratsiyasi</h3>
+                        <p class="climate-value">426 ppm</p>
+                        <p>2024-yil • Sanoatdan oldin 280 ppm</p>
+                    </div>
+                    <div class="climate-card glass">
+                        <span class="climate-icon">🌍</span>
+                        <h3>Qayta tiklanuvchi energiya</h3>
+                        <p class="climate-value">30%</p>
+                        <p>Jahon elektr energiyasining ulushi (2025)</p>
+                    </div>
+                </div>
+
+                <div class="climate-actions glass">
+                    <h4>🌱 Nima qilish mumkin?</h4>
+                    <div class="action-grid">
+                        <div class="action-item">♻️ Chiqindilarni kamaytirish</div>
+                        <div class="action-item">🚲 Elektr transportidan foydalanish</div>
+                        <div class="action-item">🌳 Daraxt ekish</div>
+                        <div class="action-item">💡 Energiya tejash</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HISTORY SECTION -->
+            <section id="history" class="section-history glass scroll-animate">
+                <div class="section-header">
+                    <h2>🏛️ Tarix</h2>
+                    <p>O'tmishdan kelajakka yo'l</p>
+                </div>
+                <div class="history-grid">
+                    <div class="history-card glass"><span>🇪🇬</span>
+                        <h3>Qadimgi Misr piramidalari</h3>
+                        <p>2500 yil avval</p>
+                    </div>
+                    <div class="history-card glass"><span>🏛️</span>
+                        <h3>Rim imperiyasi</h3>
+                        <p>27 y. av. — 476 y.</p>
+                    </div>
+                    <div class="history-card glass"><span>⚔️</span>
+                        <h3>Amir Temur imperiyasi</h3>
+                        <p>1336-1405</p>
+                    </div>
+                    <div class="history-card glass"><span>🐫</span>
+                        <h3>Buyuk Ipak yo'li</h3>
+                        <p>130 y. av. — 1453 y.</p>
+                    </div>
+                    <div class="history-card glass"><span>💣</span>
+                        <h3>Jahon urushlari</h3>
+                        <p>1914-1918 • 1939-1945</p>
+                    </div>
+                    <div class="history-card glass"><span>🚀</span>
+                        <h3>Kosmik asr boshlanishi</h3>
+                        <p>1957-yil (Sputnik)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FUTURE SECTION -->
+            <section id="future" class="section-future glass scroll-animate">
+                <div class="section-header">
+                    <h2>🚀 Kelajak</h2>
+                    <p>Ertangi kunni bugun yaratamiz</p>
+                </div>
+                <div class="future-grid">
+                    <div class="future-card glass"><span>🔴</span>
+                        <h3>Mars koloniyasi</h3>
+                        <p>2030-2040 yillar</p>
+                    </div>
+                    <div class="future-card glass"><span>🤖</span>
+                        <h3>Avtonom robotlar</h3>
+                        <p>Har bir uyda 2035</p>
+                    </div>
+                    <div class="future-card glass"><span>🧠</span>
+                        <h3>AGI (Sun'iy umumiy intellekt)</h3>
+                        <p>2030-2050</p>
+                    </div>
+                    <div class="future-card glass"><span>✈️</span>
+                        <h3>Uchuvchi avtomobillar</h3>
+                        <p>2030-yillar</p>
+                    </div>
+                    <div class="future-card glass"><span>🏙️</span>
+                        <h3>Aqlli shaharlar</h3>
+                        <p>2026-2040</p>
+                    </div>
+                    <div class="future-card glass"><span>🌌</span>
+                        <h3>Koinot turizmi</h3>
+                        <p>2027-yildan boshlab</p>
+                    </div>
+                    <div class="future-card glass"><span>🧬</span>
+                        <h3>Gen terapiyasi</h3>
+                        <p>Kasalliklarni davolash 2035</p>
+                    </div>
+                    <div class="future-card glass"><span>♻️</span>
+                        <h3>To'liq qayta ishlash</h3>
+                        <p>Zero waste 2040</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GALLERY SECTION -->
+            <section id="gallery" class="section-gallery glass scroll-animate">
+                <div class="section-header">
+                    <h2>🖼️ Galereya</h2>
+                    <p>1000+ rasm, 200+ video va 50+ interaktiv 3D model</p>
+                </div>
+
+                <div class="gallery-slider" id="gallerySlider">
+                    <div class="gallery-track" id="galleryTrack">
+                        <div class="gallery-slide">
+                            <div class="gallery-item glass">🌍 Yer — Kosmosdan ko'rinish</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-item glass">🌌 Somon yo'li galaktikasi</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-item glass">🦁 Afrika savannasi</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-item glass">🌿 Amazon o'rmoni</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-item glass">🧬 Inson DNKsi</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-item glass">🚀 Artemis II Oy parvozi</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-item glass">🌊 Buyuk to'siq rifi</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-item glass">🏔️ Everest cho'qqisi</div>
+                        </div>
+                    </div>
+                    <button class="gallery-btn prev" id="galleryPrev">‹</button>
+                    <button class="gallery-btn next" id="galleryNext">›</button>
+                </div>
+
+                <div class="video-grid">
+                    <div class="video-card glass" onclick="openVideo('https://www.w3schools.com/html/mov_bbb.mp4')">🎬
+                        Yer orbitasidan video</div>
+                    <div class="video-card glass" onclick="openVideo('https://www.w3schools.com/html/mov_bbb.mp4')">🎬
+                        Mars rover Perseverance</div>
+                    <div class="video-card glass" onclick="openVideo('https://www.w3schools.com/html/mov_bbb.mp4')">🎬
+                        James Webb teleskopi</div>
+                    <div class="video-card glass" onclick="openVideo('https://www.w3schools.com/html/mov_bbb.mp4')">🎬
+                        Okean tubidagi hayot</div>
+                    <div class="video-card glass" onclick="openVideo('https://www.w3schools.com/html/mov_bbb.mp4')">🎬
+                        Koinotning tug'ilishi (simulyatsiya)</div>
+                </div>
+            </section>
+
+            <!-- NEW: DATABASE / TABLE SECTION -->
+            <section id="database" class="section-database glass scroll-animate">
+                <div class="section-header">
+                    <h2>📊 Ma'lumotlar bazasi</h2>
+                    <p>Interaktiv jadval — barcha mintaqalar haqida to'liq ma'lumot</p>
+                </div>
+
+                <div class="data-table glass">
+                    <div class="table-header">
+                        <h3>🌍 Mintaqalar va davlatlar statistikasi</h3>
+                        <div class="table-controls">
+                            <button id="refreshBtn">🔄 Yangilash</button>
+                            <button id="addRowBtn">➕ Qator qo'shish</button>
+                            <button id="deleteRowBtn">🗑️ Oxirgisini o'chirish</button>
+                            <button id="exportBtn">📥 CSV yuklab olish</button>
+                        </div>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table id="earthTable">
+                            <thead>
+                                <tr>
+                                    <th data-sort="number">#</th>
+                                    <th data-sort="string">Mintaqa / Davlat</th>
+                                    <th data-sort="number">Maydon (km²)</th>
+                                    <th data-sort="number">Aholi (mln)</th>
+                                    <th data-sort="number">Zichlik (km²)</th>
+                                    <th data-sort="string">Iqlim</th>
+                                    <th data-sort="string">O'rt. harorat</th>
+                                    <th data-sort="string">Namlik</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-footer">
+                        <span>Jami: <strong id="totalRegions">0</strong> ta yozuv</span>
+                        <span>Oxirgi yangilanish: <strong id="lastUpdate"></strong></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEW: QUIZ SECTION -->
+            <section id="quiz" class="section-quiz glass scroll-animate">
+                <div class="section-header">
+                    <h2>🎯 Interaktiv Quiz</h2>
+                    <p>25 ta savol • Bilimlaringizni sinang • Ball to'plang</p>
+                </div>
+
+                <div class="quiz-container glass" id="quizContainer">
+                    <div class="quiz-header">
+                        <div class="quiz-progress">
+                            <div class="quiz-progress-bar" id="quizProgressBar"></div>
+                        </div>
+                        <div class="quiz-info">
+                            <span id="quizQuestionNum">1/25</span>
+                            <span id="quizScore">Ball: 0</span>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question" id="quizQuestion"></div>
+
+                    <div class="quiz-options" id="quizOptions"></div>
+
+                    <div class="quiz-footer">
+                        <button class="btn-secondary" id="quizPrevBtn" disabled>← Oldingi</button>
+                        <button class="btn-primary" id="quizNextBtn">Keyingi →</button>
+                        <button class="btn-primary glow" id="quizSubmitBtn" style="display:none;">Yakunlash va natijani
+                            ko'rish</button>
+                    </div>
+                </div>
+
+                <div class="quiz-result glass" id="quizResult" style="display:none;">
+                    <h3>🎉 Quiz yakunlandi!</h3>
+                    <div class="result-score">
+                        <span id="finalScore">0</span> / <span id="maxScore">25</span>
+                    </div>
+                    <p id="resultMessage"></p>
+                    <div class="result-badges" id="resultBadges"></div>
+                    <button class="btn-primary" id="restartQuizBtn">Qaytadan boshlash</button>
+                </div>
+            </section>
+
+            <!-- STATISTICS SECTION -->
+            <section id="statistics" class="section-stats glass scroll-animate">
+                <div class="section-header">
+                    <h2>📈 Global Statistika</h2>
+                    <p>Raqamlardagi dunyo — real-time yangilanadi</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card glass"><span class="stat-icon">🏳️</span>
+                        <h3 class="counter" data-target="195">0</h3>
+                        <p>Davlatlar</p>
+                    </div>
+                    <div class="stat-card glass"><span class="stat-icon">👥</span>
+                        <h3 class="counter" data-target="8200000000">0</h3>
+                        <p>Aholi soni</p>
+                    </div>
+                    <div class="stat-card glass"><span class="stat-icon">🌍</span>
+                        <h3 class="counter" data-target="7">0</h3>
+                        <p>Qit'alar</p>
+                    </div>
+                    <div class="stat-card glass"><span class="stat-icon">🌊</span>
+                        <h3 class="counter" data-target="5">0</h3>
+                        <p>Okeanlar</p>
+                    </div>
+                    <div class="stat-card glass"><span class="stat-icon">🌳</span>
+                        <h3 class="counter" data-target="3040000000000">0</h3>
+                        <p>Daraxtlar</p>
+                    </div>
+                    <div class="stat-card glass"><span class="stat-icon">🦋</span>
+                        <h3 class="counter" data-target="8700000">0</h3>
+                        <p>Biologik turlar</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TIMELINE SECTION -->
+            <section id="timeline" class="section-timeline glass scroll-animate">
+                <div class="section-header">
+                    <h2>⏳ Xronologiya — Yer va Insoniyat tarixi</h2>
+                    <p>4.5 mlrd yildan bugungacha</p>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-item glass"><span>🌍</span>
+                        <h3>4.54 mlrd yil avval</h3>
+                        <p>Yer paydo bo'ldi</p>
+                    </div>
+                    <div class="timeline-item glass"><span>🧬</span>
+                        <h3>3.5 mlrd yil avval</h3>
+                        <p>Birinchi hayot paydo bo'ldi</p>
+                    </div>
+                    <div class="timeline-item glass"><span>🦕</span>
+                        <h3>230 mln yil avval</h3>
+                        <p>Dinozavrlar davri boshlandi</p>
+                    </div>
+                    <div class="timeline-item glass"><span>🧑</span>
+                        <h3>300,000 yil avval</h3>
+                        <p>Zamonaviy inson paydo bo'ldi</p>
+                    </div>
+                    <div class="timeline-item glass"><span>🏛️</span>
+                        <h3>10,000 yil avval</h3>
+                        <p>Dehqonchilik va tsivilizatsiya</p>
+                    </div>
+                    <div class="timeline-item glass"><span>💻</span>
+                        <h3>1945 yil</h3>
+                        <p>Birinchi elektron kompyuter (ENIAC)</p>
+                    </div>
+                    <div class="timeline-item glass"><span>🚀</span>
+                        <h3>1957 yil</h3>
+                        <p>Sputnik-1 — kosmik asr boshlanishi</p>
+                    </div>
+                    <div class="timeline-item glass"><span>🌌</span>
+                        <h3>2026 yil</h3>
+                        <p>LIFEVERSE v5.0 — siz hozirsiz!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ SECTION -->
+            <section id="faq" class="section-faq glass scroll-animate">
+                <div class="section-header">
+                    <h2>❔ Ko'p so'raladigan savollar</h2>
+                    <p>100+ savol va javob</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item glass">
+                        <h4>🌍 Yer qanday paydo bo'ldi?</h4>
+                        <p>Yer 4.54 mlrd yil oldin Quyosh atrofidagi protoplanetar diskdan shakllangan.</p>
+                    </div>
+                    <div class="faq-item glass">
+                        <h4>🌌 Koinot necha yoshda?</h4>
+                        <p>13.8 milliard yil (Katta portlash nazariyasi).</p>
+                    </div>
+                    <div class="faq-item glass">
+                        <h4>🧬 Inson DNKsi necha juftdan iborat?</h4>
+                        <p>Taxminan 3.2 milliard juft nukleotid.</p>
+                    </div>
+                    <div class="faq-item glass">
+                        <h4>🌊 Okeanlar Yer yuzasining necha foizini egallaydi?</h4>
+                        <p>71%.</p>
+                    </div>
+                    <div class="faq-item glass">
+                        <h4>🦁 Eng katta hayvon qaysi?</h4>
+                        <p>Moviy kit — uzunligi 30 m gacha, vazni 200 tonnagacha.</p>
+                    </div>
+                    <div class="faq-item glass">
+                        <h4>🚀 Birinchi odam Oyga qachon chiqqan?</h4>
+                        <p>1969-yil 20-iyul, Neil Armstrong va Buzz Aldrin.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="section-contact glass scroll-animate">
+                <div class="section-header">
+                    <h2>📧 Biz bilan bog'laning</h2>
+                    <p>Savollar, takliflar va hamkorlik uchun</p>
+                </div>
+                <div class="contact-container glass">
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" placeholder="Ismingiz" required class="glass-input">
+                        <input type="email" placeholder="Email manzilingiz" required class="glass-input">
+                        <input type="text" placeholder="Mavzu" class="glass-input">
+                        <textarea placeholder="Xabaringiz..." rows="5" required class="glass-input"></textarea>
+                        <button type="submit" class="btn-primary glow">📤 Xabarni yuborish</button>
+                    </form>
+                    <div class="contact-info">
+                        <p>📧 info@lifverse.uz</p>
+                        <p>📞 +998 99 999 99 99</p>
+                        <p>🌐 www.lifverse.uz</p>
+                        <p>📍 Toshkent, O'zbekiston</p>
+                        <div class="social-links">
+                            <span title="Telegram">📱</span>
+                            <span title="X / Twitter">🐦</span>
+                            <span title="Instagram">📸</span>
+                            <span title="YouTube">▶️</span>
+                            <span title="Discord">🎮</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="main-footer glass">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4>🌌 LIFEVERSE v5.0 ULTRA</h4>
+                        <p>2026 • Global ta'limiy loyiha</p>
+                        <p>10,000,000,000,000+ qator kod • 142 mamlakatda</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>🔗 Manbalar</h4>
+                        <ul>
+                            <li>NASA • ESA • JAXA</li>
+                            <li>UzSpace • Roscosmos</li>
+                            <li>IUCN • WWF • UN</li>
+                            <li>Wikipedia • Britannica</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>📌 Bo'limlar</h4>
+                        <ul>
+                            <li>Yer &amp; Koinot</li>
+                            <li>Hayvonlar &amp; Tabiat</li>
+                            <li>Inson &amp; Fan</li>
+                            <li>Kelajak &amp; Quiz</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>⚡ Tezkor havolalar</h4>
+                        <ul>
+                            <li>Interaktiv Quiz</li>
+                            <li>Ma'lumotlar bazasi</li>
+                            <li>Galereya</li>
+                            <li>Statistika</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>📱 Ijtimoiy tarmoqlar</h4>
+                        <ul>
+                            <li>Telegram kanali</li>
+                            <li>X (Twitter)</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>🌐 Hamkorlar</h4>
+                        <ul>
+                            <li>O'zbekiston Fanlar akademiyasi</li>
+                            <li>NASA STEM</li>
+                            <li>European Space Agency</li>
+                            <li>UNESCO</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>© 2026 LIFEVERSE v5.0 ULTRA • Barcha huquqlar himoyalangan • Made with ❤️ for humanity</span>
+                    <span class="footer-version">v5.0 • 100% Vanilla JS • Glassmorphism • AMOLED</span>
+                </div>
+            </footer>
+
+        </main>
     </div>
-</div>
 
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="close-modal" id="closeVideoModal">×</span>
+            <video id="modalVideo" controls autoplay></video>
+        </div>
+    </div>
 
-<script src="script.js"></script>
+    <!-- ACHIEVEMENT TOAST -->
+    <div id="achievementToast" class="achievement-toast glass"></div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
