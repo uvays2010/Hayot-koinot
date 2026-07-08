@@ -266,34 +266,37 @@ function initProgressBar() {
 // 7. THEME TOGGLE + CURSOR GLOW
 // ==============================================================
 function initThemeToggle() {
-    const btn = document.getElementById('themeToggleBtn') || document.getElementById('sidebarThemeBtn');
-    if (!btn) return;
+    const buttons = [
+        document.getElementById('themeToggleBtn'),
+        document.getElementById('sidebarThemeBtn')
+    ].filter(Boolean);
+    if (!buttons.length) return;
 
-    let isDark = true;
-    btn.addEventListener('click', () => {
-        isDark = !isDark;
-        const root = document.documentElement;
+    const root = document.documentElement;
+    const savedTheme = localStorage.getItem('lifverse-theme');
+    let isDark = savedTheme ? savedTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-        if (isDark) {
-            root.style.setProperty('--bg-primary', '#0a0a0f');
-            root.style.setProperty('--bg-secondary', '#12121a');
-            root.style.setProperty('--text-primary', '#f0f0f5');
-            root.style.setProperty('--text-secondary', '#a0a0b8');
-            root.style.setProperty('--glass-bg', 'rgba(255,255,255,0.04)');
-            btn.textContent = '🌙';
-        } else {
-            root.style.setProperty('--bg-primary', '#f0f0f5');
-            root.style.setProperty('--bg-secondary', '#ffffff');
-            root.style.setProperty('--text-primary', '#111113');
-            root.style.setProperty('--text-secondary', '#444455');
-            root.style.setProperty('--glass-bg', 'rgba(0,0,0,0.04)');
-            btn.textContent = '☀️';
-        }
+    const updateButtons = () => {
+        buttons.forEach(btn => {
+            btn.textContent = isDark ? '🌙' : '☀️';
+        });
+    };
+
+    const applyTheme = () => {
+        root.dataset.theme = isDark ? 'dark' : 'light';
+        root.style.setProperty('color-scheme', isDark ? 'dark' : 'light');
+        updateButtons();
         localStorage.setItem('lifverse-theme', isDark ? 'dark' : 'light');
+    };
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            isDark = !isDark;
+            applyTheme();
+        });
     });
 
-    const saved = localStorage.getItem('lifverse-theme');
-    if (saved === 'light') btn.click();
+    applyTheme();
 }
 
 function initCursorGlow() {
@@ -1142,6 +1145,8 @@ function initMusicPlayer() {
         musicBtn.style.transform = 'scale(1)';
     });
 }
+
+
 
 // Final console message
 console.log('%c✅ LIFEVERSE v5.0 ULTRA — Barcha modullar muvaffaqiyatli ishga tushirildi!', 'color:#22d3ee; font-size:12px');
